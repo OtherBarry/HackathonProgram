@@ -25,6 +25,11 @@ Partial Class work
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.pbxHome = New System.Windows.Forms.PictureBox()
         Me.pbxGrey = New System.Windows.Forms.PictureBox()
+        Me.lblName = New System.Windows.Forms.Label()
+        Me.lblSubject = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         CType(Me.pbxHome, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxGrey, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -61,12 +66,61 @@ Partial Class work
         Me.pbxGrey.TabIndex = 24
         Me.pbxGrey.TabStop = False
         '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.Location = New System.Drawing.Point(12, 99)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(144, 13)
+        Me.lblName.TabIndex = 27
+        Me.lblName.Text = "Write a motherfucking essay."
+        '
+        'lblSubject
+        '
+        Me.lblSubject.AutoSize = True
+        Me.lblSubject.Location = New System.Drawing.Point(12, 121)
+        Me.lblSubject.Name = "lblSubject"
+        Me.lblSubject.Size = New System.Drawing.Size(43, 13)
+        Me.lblSubject.TabIndex = 28
+        Me.lblSubject.Text = "Subject"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(61, 121)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(76, 13)
+        Me.Label3.TabIndex = 29
+        Me.Label3.Text = "Due 3/5/2015"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(12, 145)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(62, 13)
+        Me.Label4.TabIndex = 30
+        Me.Label4.Text = "1000 words"
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(96, 192)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(491, 480)
+        Me.RichTextBox1.TabIndex = 31
+        Me.RichTextBox1.Text = ""
+        '
         'work
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(1366, 768)
+        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lblSubject)
+        Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.pbxHome)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.pbxGrey)
@@ -83,4 +137,9 @@ Partial Class work
     Friend WithEvents pbxHome As System.Windows.Forms.PictureBox
     Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents pbxGrey As System.Windows.Forms.PictureBox
+    Friend WithEvents lblName As System.Windows.Forms.Label
+    Friend WithEvents lblSubject As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
 End Class
