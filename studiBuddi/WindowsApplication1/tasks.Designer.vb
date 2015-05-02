@@ -25,6 +25,7 @@ Partial Class tasks
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.pbxHome = New System.Windows.Forms.PictureBox()
         Me.pbxGrey = New System.Windows.Forms.PictureBox()
+        Me.btnNewTask = New System.Windows.Forms.Button()
         CType(Me.pbxHome, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxGrey, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -61,12 +62,24 @@ Partial Class tasks
         Me.pbxGrey.TabIndex = 24
         Me.pbxGrey.TabStop = False
         '
+        'btnNewTask
+        '
+        Me.btnNewTask.BackColor = System.Drawing.Color.Gray
+        Me.btnNewTask.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNewTask.Location = New System.Drawing.Point(12, 102)
+        Me.btnNewTask.Name = "btnNewTask"
+        Me.btnNewTask.Size = New System.Drawing.Size(145, 43)
+        Me.btnNewTask.TabIndex = 27
+        Me.btnNewTask.Text = "New Task"
+        Me.btnNewTask.UseVisualStyleBackColor = False
+        '
         'tasks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(1366, 768)
+        Me.Controls.Add(Me.btnNewTask)
         Me.Controls.Add(Me.pbxHome)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.pbxGrey)
@@ -83,4 +96,5 @@ Partial Class tasks
     Friend WithEvents pbxHome As System.Windows.Forms.PictureBox
     Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents pbxGrey As System.Windows.Forms.PictureBox
+    Friend WithEvents btnNewTask As System.Windows.Forms.Button
 End Class
