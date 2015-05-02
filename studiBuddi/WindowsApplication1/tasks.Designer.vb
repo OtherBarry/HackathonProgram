@@ -25,18 +25,15 @@ Partial Class tasks
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.pbxHome = New System.Windows.Forms.PictureBox()
         Me.pbxGrey = New System.Windows.Forms.PictureBox()
-<<<<<<< HEAD
         Me.btnNewTask = New System.Windows.Forms.Button()
-=======
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblAssignment = New System.Windows.Forms.Label()
+        Me.lblSubject = New System.Windows.Forms.Label()
+        Me.lblDate = New System.Windows.Forms.Label()
+        Me.lblLength = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
->>>>>>> origin/master
         CType(Me.pbxHome, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxGrey, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,7 +72,6 @@ Partial Class tasks
         Me.pbxGrey.TabIndex = 24
         Me.pbxGrey.TabStop = False
         '
-<<<<<<< HEAD
         'btnNewTask
         '
         Me.btnNewTask.BackColor = System.Drawing.Color.Gray
@@ -86,7 +82,7 @@ Partial Class tasks
         Me.btnNewTask.TabIndex = 27
         Me.btnNewTask.Text = "New Task"
         Me.btnNewTask.UseVisualStyleBackColor = False
-=======
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.DarkSeaGreen
@@ -117,53 +113,53 @@ Partial Class tasks
         Me.Label1.TabIndex = 29
         Me.Label1.Text = "Upcoming Tasks"
         '
-        'Label2
+        'lblAssignment
         '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label2.BackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(775, 209)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(491, 38)
-        Me.Label2.TabIndex = 30
-        Me.Label2.Text = "Write a motherfucking essay."
+        Me.lblAssignment.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.lblAssignment.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.lblAssignment.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold)
+        Me.lblAssignment.ForeColor = System.Drawing.Color.White
+        Me.lblAssignment.Location = New System.Drawing.Point(775, 209)
+        Me.lblAssignment.Name = "lblAssignment"
+        Me.lblAssignment.Size = New System.Drawing.Size(491, 38)
+        Me.lblAssignment.TabIndex = 30
+        Me.lblAssignment.Text = "Latest Assignment"
         '
-        'Label3
+        'lblSubject
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(778, 264)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(171, 24)
-        Me.Label3.TabIndex = 31
-        Me.Label3.Text = "Subject - English"
+        Me.lblSubject.AutoSize = True
+        Me.lblSubject.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.lblSubject.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSubject.ForeColor = System.Drawing.Color.White
+        Me.lblSubject.Location = New System.Drawing.Point(778, 264)
+        Me.lblSubject.Name = "lblSubject"
+        Me.lblSubject.Size = New System.Drawing.Size(85, 24)
+        Me.lblSubject.TabIndex = 31
+        Me.lblSubject.Text = "Subject"
         '
-        'Label4
+        'lblDate
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(778, 300)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(303, 24)
-        Me.Label4.TabIndex = 32
-        Me.Label4.Text = "Due Date - 3/5/2015 1:00 PM"
+        Me.lblDate.AutoSize = True
+        Me.lblDate.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.lblDate.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDate.ForeColor = System.Drawing.Color.White
+        Me.lblDate.Location = New System.Drawing.Point(778, 300)
+        Me.lblDate.Name = "lblDate"
+        Me.lblDate.Size = New System.Drawing.Size(110, 24)
+        Me.lblDate.TabIndex = 32
+        Me.lblDate.Text = "Due Date"
         '
-        'Label5
+        'lblLength
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(778, 340)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(215, 24)
-        Me.Label5.TabIndex = 33
-        Me.Label5.Text = "Length - 1000 Words"
+        Me.lblLength.AutoSize = True
+        Me.lblLength.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.lblLength.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLength.ForeColor = System.Drawing.Color.White
+        Me.lblLength.Location = New System.Drawing.Point(778, 340)
+        Me.lblLength.Name = "lblLength"
+        Me.lblLength.Size = New System.Drawing.Size(81, 24)
+        Me.lblLength.TabIndex = 33
+        Me.lblLength.Text = "Length"
         '
         'Label6
         '
@@ -176,7 +172,6 @@ Partial Class tasks
         Me.Label6.Size = New System.Drawing.Size(214, 24)
         Me.Label6.TabIndex = 34
         Me.Label6.Text = "Completion -  87.5%"
->>>>>>> origin/master
         '
         'tasks
         '
@@ -184,18 +179,15 @@ Partial Class tasks
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(1366, 768)
-<<<<<<< HEAD
         Me.Controls.Add(Me.btnNewTask)
-=======
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblLength)
+        Me.Controls.Add(Me.lblDate)
+        Me.Controls.Add(Me.lblSubject)
+        Me.Controls.Add(Me.lblAssignment)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
->>>>>>> origin/master
         Me.Controls.Add(Me.pbxHome)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.pbxGrey)
@@ -214,16 +206,13 @@ Partial Class tasks
     Friend WithEvents pbxHome As System.Windows.Forms.PictureBox
     Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents pbxGrey As System.Windows.Forms.PictureBox
-<<<<<<< HEAD
     Friend WithEvents btnNewTask As System.Windows.Forms.Button
-=======
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents lblAssignment As System.Windows.Forms.Label
+    Friend WithEvents lblSubject As System.Windows.Forms.Label
+    Friend WithEvents lblDate As System.Windows.Forms.Label
+    Friend WithEvents lblLength As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
->>>>>>> origin/master
 End Class

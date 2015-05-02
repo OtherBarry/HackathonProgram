@@ -32,7 +32,7 @@ Partial Class newTask
         Me.lblNotes = New System.Windows.Forms.Label()
         Me.txtLength = New System.Windows.Forms.TextBox()
         Me.lblLength = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbSubject = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpDateDue = New System.Windows.Forms.DateTimePicker()
         Me.lblDate = New System.Windows.Forms.Label()
@@ -120,7 +120,7 @@ Partial Class newTask
         '
         Me.txtLength.Location = New System.Drawing.Point(303, 172)
         Me.txtLength.Name = "txtLength"
-        Me.txtLength.Size = New System.Drawing.Size(77, 20)
+        Me.txtLength.Size = New System.Drawing.Size(121, 20)
         Me.txtLength.TabIndex = 36
         '
         'lblLength
@@ -133,13 +133,14 @@ Partial Class newTask
         Me.lblLength.TabIndex = 37
         Me.lblLength.Text = "Length of Task"
         '
-        'ComboBox1
+        'cmbSubject
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(303, 220)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 38
+        Me.cmbSubject.FormattingEnabled = True
+        Me.cmbSubject.Items.AddRange(New Object() {"English", "Maths"})
+        Me.cmbSubject.Location = New System.Drawing.Point(303, 220)
+        Me.cmbSubject.Name = "cmbSubject"
+        Me.cmbSubject.Size = New System.Drawing.Size(121, 21)
+        Me.cmbSubject.TabIndex = 38
         '
         'Label1
         '
@@ -181,7 +182,7 @@ Partial Class newTask
         'cmbInternet
         '
         Me.cmbInternet.FormattingEnabled = True
-        Me.cmbInternet.Items.AddRange(New Object() {"Yes", "No"})
+        Me.cmbInternet.Items.AddRange(New Object() {"True", "False"})
         Me.cmbInternet.Location = New System.Drawing.Point(303, 317)
         Me.cmbInternet.Name = "cmbInternet"
         Me.cmbInternet.Size = New System.Drawing.Size(65, 21)
@@ -223,7 +224,7 @@ Partial Class newTask
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.dtpDateDue)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbSubject)
         Me.Controls.Add(Me.lblLength)
         Me.Controls.Add(Me.txtLength)
         Me.Controls.Add(Me.txtNotes)
@@ -253,7 +254,7 @@ Partial Class newTask
     Friend WithEvents lblNotes As System.Windows.Forms.Label
     Friend WithEvents txtLength As System.Windows.Forms.TextBox
     Friend WithEvents lblLength As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbSubject As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents dtpDateDue As System.Windows.Forms.DateTimePicker
     Friend WithEvents lblDate As System.Windows.Forms.Label
